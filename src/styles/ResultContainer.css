@@ -1,0 +1,104 @@
+#result-container {
+  display: flex;
+  background-color: #FFF;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+  height: 425px;
+  margin-top: 40px;
+}
+
+#image-input {
+  background-color: #252525;
+  width: 60%;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-input img {
+  max-height: 375px;
+}
+
+#result {
+  width: 40%;
+  padding: 20px;
+}
+
+#detected-face {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+#guess {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#guess p {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: inset 0 0 0 3px #149df2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#intro {
+  text-align: center;
+  padding: 100px 50px 0;
+}
+
+#intro p {
+  margin: 0 0 5px 0;
+}
+
+#spinner-container {
+  width: 100%;
+}
+
+#spinner {
+  margin: 175px 0 0 225px;
+}
+
+@media (max-width: 1200px) {
+  #result-container {
+    flex-direction: column;
+    height: 625px;
+  }
+  #image-input {
+    width: 100%;
+    height: 60%;
+  }
+  #image-input img{
+    max-width: 500px;
+    height: auto;
+  }
+  #result {
+    width: 100%;
+    height: 40%;
+  }
+  #intro {
+    padding: 10px 0 0 0;
+  }
+  #guess {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  #image-input img{
+    max-width: 300px;
+    height: auto;
+  }
+}

@@ -1,0 +1,50 @@
+#input-field {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#input-field p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 0 0 5px 0;
+}
+
+#the-input-field {
+  display: flex;
+}
+
+#the-input-field input {
+  width: 82%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.05)
+}
+
+#the-input-field button {
+  font-weight: 500;
+  width: 17%;
+  margin-left: 1%;
+  background-color: #0C438B;
+  color: #FFF;
+  border: none;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2)
+}
+
+@media (max-width: 600px) {
+  #the-input-field {
+    flex-direction: column;
+    align-items: center;
+  }
+  #the-input-field input{
+    width: 100%;
+  }
+  #the-input-field button{
+    width: 30%;
+    margin-top: 5px;
+  }
+}

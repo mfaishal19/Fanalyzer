@@ -1,0 +1,18 @@
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+html {
+  box-sizing: inherit
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  color: #141414;
+  background-color: #F4FAFD;
+}
+
+#container {
+  padding: 0 10px;
+}
