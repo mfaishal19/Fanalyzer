@@ -94,11 +94,17 @@
   #guess {
     padding-top: 40px;
   }
+  #spinner {
+    margin: 125px 0 0 550px;
+  }
 }
 
 @media (max-width: 600px) {
   #image-input img{
     max-width: 300px;
     height: auto;
+  }
+  #spinner {
+    margin: 125px 0 0 275px;
   }
 }
